@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangun Datar</title>
+</head>
+<style>
+    .body {
+        margin: 0px 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    h2 {
+        text-transform: uppercase;
+    }
+
+    h4 {
+        font-size: 15pt;
+    }
+</style>
+
+<body>
+    <h1>Bangun Datar</h1>
+    <hr>
+    <div class="body">
+        <div>
+            <h2>Persegi Panjang</h2>
+            <p>
+                Pajang = 20 cm<br>
+                Lebar = 10 cm<br>
+                Luas = ? <br>
+                Keliling = ?
+                <br><br>
+                <h4>Rumus</h4>
+                Luas = Panjang x Lebar <br>
+                Keliling = (2 x Panjang) + (2 x Lebar)
+                <br><br>
+                <h4>Hasil</h4>
+                <p id="hasper1" class="hasil"></p>
+                <p id="hasper2" class="hasil"></p>
+            </p>
+        </div>
+
+        <div>
+            <h2>Jajar Genjang</h2>
+            <p>
+                Alas = 12 cm <br>
+                Tinggi = 9 cm <br>
+                Luas = ?
+                <h4>Rumus</h4>
+                Luas = Alas x tinggi <br>
+                <br><br>
+                <h4>Hasil</h4>
+                <p id="hasjar1" class="hasil"></p>
+            </p>
+        </div>
+
+        <div>
+        <h2>Segitiga</h2>
+            <p>
+                Alas = 6 cm <br>
+                Tinggi = 8 cm <br>
+                Luas = ? <br>
+                Keliling = ?
+                <h4>Rumus</h4>
+                Luas = 0,5 x Alas x Tinggi <br>
+                Keliling = Alas x 3
+                <br><br>
+                <h4>Hasil</h4>
+                <p id="hasse1" class="hasil"></p>
+                <p id="hasse2" class="hasil"></p>
+            </p>
+        </div>
+    </div>
+</body>
+<script>
+    // Persegi Pajang
+    p1 = 20;
+    l1 = 10;
+    haslu = (p1 * l1)
+    haskel = (2 * p1 + 2 * l1)
+    hasper1.innerHTML = `Luas = ${haslu} cm`
+    hasper2.innerHTML = `Keliling = ${haskel} cm`
+
+    // Jajar genjang
+    aj = 12;
+    tj = 9;
+    lj = (aj * tj)
+    hasjar1.innerHTML = `Luas = ${lj}`
+
+    // Segitiga
+    as = 6;
+    ts = 8;
+    ls = (0.5 * as * ts);
+    ks = (3 * as)
+    hasse1.innerHTML = `Luas = ${ls} cm`
+    hasse2.innerHTML = `Keliling = ${ks} cm`
+
+
+</script>
+</html>
