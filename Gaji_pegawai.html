@@ -1,0 +1,43 @@
+<script>
+    let pegawai = "Rizki Ilhami";
+
+    let jabatan = "Manager";
+    // let jabatan = "Asisten Manager";
+    // let jabatan = "Staff";
+
+    let status1 = "Menikah"
+    // let status1 = "Belum Menikah"
+
+    let gaji = 0;
+    
+    switch(jabatan){
+        case 'Manager':gaji = 10000000; break;
+        case 'Asisten Manager':gaji = 8000000; break;
+        case 'Staff':gaji = 5000000; break;
+        default:gaji = 0;
+    }
+    // untuk tunjangan, bpjs dan status1
+    let persen = 0.1;
+
+    let tunjangan = gaji * persen;
+    let bpjs = gaji * persen;
+    
+    let menikah = 0;
+    switch(status1){
+        case 'Menikah':menikah = gaji * persen; break;
+        default:menikah = 0;
+    };
+    
+    total_pendapatan = gaji + tunjangan + bpjs + menikah;
+
+    document.write( " <h2>Data Pegawai</h2>" +
+    "Nama : " + pegawai +
+    "<br> Jabatan : " + jabatan +
+    "<br> Status : " + status1 +
+    "<br> Gaji Pokok : " + gaji +
+    "<br> Tunjangan : " + tunjangan +
+    "<br> BPJS : " + bpjs +
+    "<br> Tunjangan Sudah Menikah : " + menikah +
+    "<br><h3> Total Pendapatan : " + total_pendapatan
+    )
+</script>
