@@ -1,0 +1,87 @@
+<style>
+    body {
+        background-color: aliceblue;
+    }
+    table {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80vh;
+        text-align: center;
+        border: 1px solid #000;
+    }
+    thead {
+        height: 40px;
+        background: #000;
+        color: aliceblue;
+    }
+    tbody {
+        justify-items: center;
+    }
+    td {
+        height: 30px;
+    }
+</style>
+
+<body>
+<h3>   
+    <table>
+        <thead>
+            <th>No</th>
+            <th>Nama</th>
+            <th>Nilai</th>
+            <th>Keterangan</th>
+            <th>Grade</th>
+            <th>Predikat</th>
+        </thead>
+        <tbody>
+            <script>
+                let no = 1;
+                let grade;
+                let predikat;
+
+                let color;
+
+                let p1 = {nama:"Rizki", nilai:99};
+                let p2 = {nama:"Anto", nilai:88};
+                let p3 = {nama:"Ani", nilai:77};
+                let p4 = {nama:"Apin", nilai:55};
+                let p5 = {nama:"Alfin", nilai:22};
+
+                let person = [p1,p2,p3,p4,p5];
+
+                for (p of person){
+                    let ket = (p.nilai >= 60)? "Lulus" : "Gagal";
+                    color = (no % 2 == 0 )? '97DEFF' : 'C9EEFF';
+
+                    if (p.nilai > 90 && p.nilai <= 100 ) grade = "A";
+                    else if (p.nilai > 80 && p.nilai <= 90 ) grade = "B";
+                    else if (p.nilai > 60 && p.nilai <= 80 ) grade = "C";
+                    else if (p.nilai > 30 && p.nilai <= 60 ) grade = "D";
+                    else if (p.nilai > 0 && p.nilai <= 30 ) grade = "E";
+                    else grade = "";
+
+                    switch(grade){
+                    case "A": predikat = "Sangat Baik"; break;
+                    case "B": predikat = "Baik"; break;
+                    case "C": predikat = "Cukup"; break;
+                    case "D": predikat = "Kurang"; break;
+                    case "E": predikat = "Sangat Kurang"; break;
+                    default: predikat = "-"; break;
+                    }
+
+                    document.write(`
+                        <tr bgcolor="${color}">
+                            <td>${no++}</td>
+                            <td>${p.nama}</td>
+                            <td>${p.nilai}</td>
+                            <td>${ket}</td>
+                            <td>${grade}</td>
+                            <td>${predikat}</td>
+                    `);
+                }
+
+            </script>
+        </tbody>
+    </table>
+</h3>
+</body>
