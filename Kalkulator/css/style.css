@@ -1,0 +1,86 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body {
+    background-color: aqua;
+    padding: 20px;
+    width: 400px;
+    height: 450px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.input{
+    display: flex;
+    margin: 10px;
+}
+
+#math {
+    font-size: 25pt;
+    background-color: aqua;
+    color: red;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#hasil {
+    color: black;
+    margin-top: 40px;
+    width: 130px;
+    margin: 10px;
+}
+
+input {
+    background-color: aliceblue;
+    margin-top: 5px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 10pt;
+    text-align: center;
+    height: 40px;
+    width: 100%;
+}
+
+.math {
+    margin-top: 10px;
+}
+
+.math button {
+    background-color: #ECF2FF;
+    margin-top: 5px;
+    height: 20px;
+    width: 190px;
+    height: 40px;
+    border: 1px;
+    border-radius: 5px;
+    font-size: 15pt;
+}
+
+#reset {
+    color: #ECF2FF;
+    background-color: rgb(221, 25, 25);
+
+}
+
+#reset:hover {
+    background-color: red;
+}
+
+.math button:hover {
+    background-color: white;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

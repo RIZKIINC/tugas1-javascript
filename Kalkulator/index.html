@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="body">
+        <form id="kalkulator">
+            <h1>KALKULATOR</h1>
+
+            <div class="input">
+                <input type="number" name="angka1" placeholder="Masukkan Angka">
+                <input type="text" id="math" name="math" value="∞" disabled>
+                <input type="number" name="angka2" placeholder="Masukkan Angka">
+            </div>
+            <input id="hasil" type="text" name="hasil" value="" placeholder="Hasilnya Disini" disabled>
+            <div class="math">
+                <button type="button" name="btn-tambah" onclick="tambah()">+</button>
+                <button type="button" name="btn-kurang" onclick="kurang()">-</button>
+                <button type="button" name="btn_kali" onclick="kali()">x</button>
+                <button type="button" name="btn-bagi" onclick="bagi()">:</button>
+                <button type="button" name="btn_pangkat" onclick="pangkat()">Pangkat</button>
+                <button id="reset" type="reset" name="btn_pangkat">AC</button>
+            </div>
+
+        </form>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
