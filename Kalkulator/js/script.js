@@ -10,10 +10,12 @@ function tambah(){
         alert("Maaf Angka Belum Dimasukkan");
 
     }
+    else if(frm.angka1.value != "" || frm.angka2.value == ""){
+        frm.hasil.value = total;
+        frm.math.value = simbol;
+
+    }
     else {}
-    
-    frm.math.value = simbol;
-    frm.hasil.value = total;
 }
 
 function kurang(){
@@ -27,10 +29,12 @@ function kurang(){
     if(frm.angka1.value == "" || frm.angka2.value == ""){
         alert("Maaf Angka Belum Dimasukkan");
     }
+    else if(frm.angka1.value != "" || frm.angka2.value == ""){
+        frm.hasil.value = total;
+        frm.math.value = simbol;
+
+    }
     else {}
-    
-    frm.math.value = simbol;
-    frm.hasil.value = total;
 }
 
 function kali(){
@@ -44,10 +48,12 @@ function kali(){
     if(frm.angka1.value == "" || frm.angka2.value == ""){
         alert("Maaf Angka Belum Dimasukkan");
     }
+    else if(frm.angka1.value != "" || frm.angka2.value == ""){
+        frm.hasil.value = total;
+        frm.math.value = simbol;
+
+    }
     else {}
-    
-    frm.math.value = simbol;
-    frm.hasil.value = total;
 }
 
 function bagi(){
@@ -61,10 +67,12 @@ function bagi(){
     if(frm.angka1.value == "" || frm.angka2.value == ""){
         alert("Maaf Angka Belum Dimasukkan");
     }
+    else if(frm.angka1.value != "" || frm.angka2.value == ""){
+        frm.hasil.value = total;
+        frm.math.value = simbol;
+
+    }
     else {}
-    
-    frm.math.value = simbol;
-    frm.hasil.value = total;
 }
 
 function pangkat(){
@@ -78,8 +86,10 @@ function pangkat(){
     if(frm.angka1.value == "" || frm.angka2.value == ""){
         alert("Maaf Angka Belum Dimasukkan");
     }
+    else if(frm.angka1.value != "" || frm.angka2.value == ""){
+        frm.hasil.value = total;
+        frm.math.value = simbol;
+
+    }
     else {}
-    
-    frm.math.value = simbol;
-    frm.hasil.value = total;
 }
