@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+
+    <script src="js/jquery-3.6.4.js"></script>
+
+</head>
+
+<style>
+    body {
+        background-color: #E4D0D0;
+        margin: 2px;
+    }
+
+
+
+    img {
+        width: 32.5%;
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .btn {
+        font-size: 8pt;
+        background: #F5EBEB;
+        border: 0;
+        border-radius: 15px;
+        justify-content: center;
+        margin: 0px 5px;
+        width: 100px;
+        height: 50px;
+    }
+
+    .btn:hover {
+        background-color: #D5B4B4;
+    }
+</style>
+
+<body>
+    <div class="img">
+        <img id="g1" src="https://cdn.pixabay.com/photo/2023/01/01/21/33/mountain-7690893_960_720.jpg" alt="">
+        <img id="g2" src="https://cdn.pixabay.com/photo/2013/07/18/20/26/sea-164989_960_720.jpg" alt="">
+        <img id="g3" src="https://cdn.pixabay.com/photo/2013/10/02/23/03/mountains-190055_960_720.jpg" alt="">
+    </div>
+
+    <p>Klik gambar untuk menyembunyikannya</p>
+
+    <div>
+        <input id="show" class="btn" type="button" value="Tampil Semua">
+        <input id="hide" class="btn" type="button" value="Hide Semua">
+    </div>
+</body>
+
+<script>
+    // untuk image
+    $( document ).ready(function() {
+
+        $("#g1").click(function(){
+            $( "#g1" ).hide(900);
+        });
+
+        $("#g2").click(function(){
+            $( "#g2" ).hide(900);
+        });
+
+        $("#g3").click(function(){
+            $( "#g3" ).hide(900);
+        });
+        
+
+        $("#show").click(function(){
+            $( "img" ).show(900);
+        });
+
+        $("#hide").click(function(){
+            $( "img" ).hide(900);
+    
+        });
+    });
+</script>
+
+</html>
