@@ -13,15 +13,19 @@
 <style>
     body {
         background-color: #E4D0D0;
-        margin: 2px;
+        margin: 1px;
     }
 
-
-
+    /* .img {
+        padding: 1px;
+    } */
+    
     img {
-        width: 32.5%;
+        padding: 2px;
+        border-radius: 20px;
+        width: 33%;
     }
-
+    
     div {
         display: flex;
         justify-content: center;
@@ -58,7 +62,7 @@
     <p>Klik gambar untuk menyembunyikannya</p>
 
     <div>
-        <input id="show" class="btn" type="button" value="Tampil Semua">
+        <input id="show" class="btn" type="button" value="Show Semua">
         <input id="hide" class="btn" type="button" value="Hide Semua">
     </div>
 </body>
@@ -78,7 +82,7 @@
         $("#g3").click(function(){
             $( "#g3" ).hide(900);
         });
-        
+
 
         $("#show").click(function(){
             $( "img" ).show(900);
